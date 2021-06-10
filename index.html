@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Assembly Inhouse Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.mySlides {display:none;}
+</style>
+<body>
+
+
+
+
+
+<!-- NAVBAR -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-flat-midnight-blue w3-card w3-left-align w3-large">
+
+
+
+<!-- USEFUL SITES -->
+
+ <div class="w3-dropdown-hover">
+    <button class="w3-button w3-padding-large w3-white">Useful Sites</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="https://dashboard.vwoa.na.vwg/" class="w3-bar-item w3-button w3-padding-large w3-white">Dashboard</a>
+
+    <a href="https://dashboard.vwoa.na.vwg/documents/21041/51898248/2021+Operating+Calendars/0e232b46-5dc7-6866-d8bd-1d489edb0f1e" class="w3-bar-item w3-button w3-padding-large w3-white">2021 Operating Calendar</a>
+
+    <a href="file://///na.vwg/Chattanooga/File/CM-ManufacturingWeb/Webpage/Tech%20Change%20Page.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Technical Change Webpage</a>
+
+    <a href="https://performancemanager8.successfactors.com/login?company=volkswag03&loginMethod=PWD#/login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Success Factors</a>
+
+    <a href="https://group-wiki.wob.vw.vwg/wikis/display/VWWIKI/Home" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">VW Wiki</a>
+
+    <a href="http://vwb.wob.vw.vwg/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">VW Dictionary</a>
+
+    <a href="http://10.139.6.97/ChaMPSGeneralStoreParts/Home/PartsSearch" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">General Store Parts Search</a>
+
+    <a href="file:///\\vwoachsfile01\production\Master Database\KLT-GLT Database\KLTGLT Master List.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">KLT-GLT Database</a>
+
+
+<a href="file:///\\na.vwg/Chattanooga/File/CM-ManufacturingWeb/Technical%20Change%20Info/MASTER%20DATA.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Read-Only Slotting Database</a>
+
+
+    <a href="https://dashboard.vwoa.na.vwg/web/quality-management-system/logistics" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">QMS</a>
+
+    <a href="https://dashboard.vwoa.na.vwg/documents/46280/11661974/Regelung_Prozessaudit_Stand_Nov2017_V2_final_EN_mit_Anlagen.pdf/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Process Audit Standard</a>
+
+    <a href="https://dashboard.vwoa.na.vwg/documents/46280/11661974/Regulation+for+the+division+Group+Quality+Logistik-Prozessaudit_ENG.pdf/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">VDA Standard</a>
+
+    <a href="http://cha-reporting:85/ListOverview.aspx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Plant Reporting (Read Only)</a>
+   </div>
+   </div>
+
+
+
+<!-- STANDARD WORK PORTAL LINK -->  
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\StandardWork.htm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Standard Work</a>
+
+
+
+<!-- FORMS DROPDOWN --> 
+ 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">Forms</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+	<a href="#newtm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">New Team Member</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\ConnectionIssuesTracker.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking Issues Tracker</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\TopicSheet.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Topic Sheet</a>
+
+    	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\OnePointLesson.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">One Point Lesson</a>
+
+    	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\OperationalQualityAlert.ppt" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Operational Quality Alert</a>
+    	
+    	<a href="https://dashboard.vwoa.na.vwg/documents/46280/9370748/F_3.3_CL-I_025%20Logistics%20Qualification%20Matrix-%20BLANK.xlsx/ef5b3109-ef93-4659-a231-d6943ff1681d" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Qualification Matrix</a>
+
+    	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Team Leaders Daily.Weekly Checklist.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Team Lead Daily/Weekly Checks</a>
+
+    	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Team Leaders Process Audit.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Process Audit Forms</a>   
+
+    	<a href="https://dashboard.vwoa.na.vwg/documents/46280/9370748/F_3.3_CL-I_027%20Sequence%20Confirmation%20Sheet%20Rev%203.xlsx/d23adb43-ff71-3d6b-d553-fc12b5faecf9" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Sequence Confirmation Sheet</a>
+
+    	<a href="https://dashboard.vwoa.na.vwg/documents/21041/6812252/Stand%20Up%20Tow%20Truck%20Inspection%20Sheet/a42d64a3-15f9-4a04-a89e-6cd1ba54d205" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Pre-Shift Tugger Check Sheet</a>
+
+    	<a href="http://10.139.6.97/ChaMPSWorkRequest/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Work Order Form/CHAMPS</a>
+
+    	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Application Request Form-5.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">SAP Request Form</a>   
+
+    	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Concept Approval Template.xls" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Concept Approval Template</a>
+
+    	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\2021 PowerPoint template.pptx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">VW Powerpoint Template</a>
+
+<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Equipment.SignInSignOut.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Equipment Sign In/Sign Out</a>
+   </div>
+   </div>
+
+
+
+<!-- SAFETY DROP DOWN -->
+
+<div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">Safety</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Logistics Safety Leads.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Leads</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\LogisticsSafetyIncidentCalendar.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Calendar</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety Heat Map 2021.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Heat Map 2021</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety IIP 2021.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety IIP 2021</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety Heat Map 2020.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Heat Map 2020</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\RulesoftheRoad.Rev0.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Rules of the Road</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Safety Guide Audit.Logistics.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Guide Audit</a>
+    
+		<div class="w3-dropdown-hover">
+    		<button class="w3-button  w3-hover-white w3-padding-large">Safety Alerts</button>
+    		<div class="w3-dropdown-content w3-bar-block w3-border">
+			<ul class ="sub1">
+   			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Incident Report - Recordable Injury.oft" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Recordable Distribution</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Incident Report - Property Damage.Near Miss.oft" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Near Miss Distribution</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Universal Safety Alert.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Alert</a>
+			</ul>
+		</div>
+   		</div>
+
+<!---    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Conveyance Documentation\SafetyGuide\SafetyReviewBoard\LogisticsSafetyReviewBoard.CW25.4.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Last Safety Review Board</a>
+--->
+   </div>
+   </div>
+
+
+
+
+
+<!---KPIs DROP DOWN--->
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">KPIs</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.Safety.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceARanks.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">A-Ranks</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceDowntime.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Downtime</a>
+
+<!---    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceMissingParts.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Missing Parts</a>
+--->
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.Scrap.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Scrap</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\SCRAP PDF\WEEKLY NCD REPORT.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Scrap Tracker</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.5SAudit.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">5S</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\2021 Process Audit Overview.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Process Audit Overview</a>
+
+   </div>
+   </div>
+
+
+
+
+
+<!--- SEE SOMETHING SAY SOMETHING DROP DOWN
+<div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">S.S.-S.S.</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\SeeSomethingSaySomething\SeeSomethingSaySomething.Campaign.Day1.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Intro</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\SeeSomethingSaySomething\SeeSomethingSaySomething.Campaign.Week2.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 2</a>
+   </div>
+   </div>
+--->
+
+
+
+
+
+
+<!---  VDA PREP DOCUMENTS DROP DOWN
+<div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">VDA Prep</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week1.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 1</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week2.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 2</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week3.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 3</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week4.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 4</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week6.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 6</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week7.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 7</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week9.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 9</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\WeeklyVDAPrepSchedule.Week10.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Week 10</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\SampleScoreSheet.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Sample Scoresheet</a>
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\AuditPrep\2019InternalAuditPrep.Conveyance.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Internal Audit Points</a>
+   </div>
+   </div>
+--->
+
+
+
+
+
+
+<!--- PROJECTS DROP DOWN --->
+
+ <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">Projects</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\AssemblyLinefeedingProjectPlan.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">2021 Linefeeding Project Plan</a>
+
+    <!---
+	<a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\Projects\LineFeedingProjectPlan.Coupe0SeriesReadiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Coupe Processes</a>
+    --->
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 1 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 1 Weekly Project Meeting Notes</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 2 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 2 Weekly Project Meeting Notes</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 3 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 3 Weekly Project Meeting Notes</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\LogPlanningOrganization.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Log. Planning Contact List</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\AGV timelineUpdate.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">AGV Timeline</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeekendWork\Assembly Logistics Weekend Work.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Weekend Work</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.Timeline.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking Timeline</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.CIPOP.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking CIP/Open Points</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\Shutdowns\CW22 2021 Shutdown\SummerShutdown2021_AssemblyLogistics_ProjectTracker.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Shutdown Project Tracker</a>
+    
+   </div>
+   </div>
+
+
+
+<!--- MEB Readiness/Logistics Launch DROP DOWN --->
+
+ <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">Logistics Launch</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\Launch\LaunchTeam.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Logistics Launch Team</a>
+    
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 1 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 1 Readiness</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 2 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 2 Readiness</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 3 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 3 Readiness</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\delivery rack readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Pre-Series Equipment Readiness</a>
+
+    <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Pre-Series Equipment Staging Map</a>
+
+   </div>
+   </div>
+
+
+
+<!--- DIGITAL PICKING DROP DOWN --->
+<!---
+ <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">Digital Picking</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.Timeline.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking Timeline</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DeploymentMap.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking Deployment Map</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\Communications\Implementation.Week1.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Communications Week 1</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\Communications\Implementation.Week3.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Communications Week 3</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\Communications\Implementation.Week7.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Communications Week 7</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\Communications\Implementation.Week1.2021.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Communications 2021 Revamp</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.CIPOP.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking CIP/Open Points</a>
+
+
+<div class="w3-dropdown-hover">
+    		<button class="w3-button  w3-hover-white w3-padding-large">Training/User Guides</button>
+    		<div class="w3-dropdown-content w3-bar-block w3-border">
+			<ul class ="sub1">
+   			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\TrainingDocuments\Cobra Supervisor Training.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Supervisor/TL Training</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\TrainingDocuments\CoBra_HDTpicking_SEQ_fix.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Sequence Fix</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\TrainingDocuments\Zebra_Toughpad_Login.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">TM Login Guide</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\TrainingDocuments\Troubleshooting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">TM Troubleshooting Guide</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\TrainingDocuments\AssetTracking.SignIn.SignOut.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Asset Tracking</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\TrainingDocuments\TeamMemberTraining.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">TM Training Packet</a>
+			</ul>
+		</div>
+   		</div>
+ 
+   </div>
+   </div>
+
+--->
+
+
+<!---SUPERVISORS DROP DOWN--->
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">Supervisors</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\SupervisorChecksheet.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Supervisor Checklist</a>
+
+	<a href="https://secure.ohmcentral.com/erlanger/OHMIndex?T=1543263980262" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">OHM</a>
+
+	<a href="https://stibam.wob.vw.vwg/umfrage/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">StiBam</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Training\AuditDatabase.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Audit Responses Guide</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\TPM\EquipmentList.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Sequence/Kit Box Inventory</a>
+
+	<a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Conveyance Documentation\Manning Sheets\ManpowerReport\ManpowerReportTemplate.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Daily Manpower Report</a>
+
+	<!---    
+	<a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Conveyance Documentation\Communications\HYB\HYB.Q3.2019.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">HYB Q3.2019</a>
+	<a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Conveyance Documentation\Communications\HYB\HYB.Q4Update.2019.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">HYB Q4Update.2019</a>
+	--->
+
+
+<!--- Conveyance Zone KPIs still linked to Logistics Drive--->
+
+	<div class="w3-dropdown-hover">
+    		<button class="w3-button  w3-hover-white w3-padding-large">Shop Floor KPIs</button>
+    		<div class="w3-dropdown-content w3-bar-block w3-border">
+			<ul class ="sub1">
+   			<li><a href="file:///\\na.vwg\Chattanooga\Dept\CL\Leitstand\DAILY TOOLS\Passdown\Assembly Passdowns\2021 - Pass Down\ZoneKPIs\ZoneKPIsTutorial.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Tutorial</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\Dept\CL\Leitstand\DAILY TOOLS\Passdown\Assembly Passdowns\2021 - Pass Down\ZoneKPIs\Zone1.Charts.Graphs.2021.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 1</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\Dept\CL\Leitstand\DAILY TOOLS\Passdown\Assembly Passdowns\2021 - Pass Down\ZoneKPIs\Zone2.Charts.Graphs.2021.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 2</a>
+			<li><a href="file:///\\na.vwg\Chattanooga\Dept\CL\Leitstand\DAILY TOOLS\Passdown\Assembly Passdowns\2021 - Pass Down\ZoneKPIs\Zone3.Charts.Graphs.2021.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 3</a>
+			</ul>
+		</div>
+   		</div>
+   </div>
+   </div>
+
+
+
+
+
+
+<!--- LCC DROP DOWN --->
+<!--- still linked to Logistics Drive--->
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">LCC</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="https://vwoachvxenapp01/Citrix/VWGoAChattanoogaWeb/" class="w3-bar-item w3-button w3-padding-large w3-white">Citrix</a>
+
+    <a href="http://cha-reporting/" class="w3-bar-item w3-button w3-padding-large w3-white">Plant Reporting</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\Forms\LCCCalculations.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">LCC Calculations</a>
+
+    <a href="http://10.139.250.39:46120/COBRA/Leitstand/" class="w3-bar-item w3-button w3-padding-large w3-white">Cobra Leitstand</a>
+   </div>
+   </div>
+
+
+
+
+
+<!--- TCC/CMC DROP DOWN --->
+<!--- still linked to Logistics Drive--->
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">TCC/CMC</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Drew Jennings\KPIs\TCC KPI\Endurance KPI 2020.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Endurance KPI</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Drew Jennings\KPIs\TCC KPI\Manual IBDs 2020.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Manual IBDs KPI</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Drew Jennings\KPIs\TCC KPI\Total Trailers KPI 2020.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Total Trailers KPI</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Drew Jennings\KPIs\CMC KPI\Shop Floor Management One Pager 2020.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">CMC KPI</a>
+
+   </div>
+   </div>
+
+
+
+
+
+<!---MANAGEMENT DROP DOWN--->
+
+<div class="w3-dropdown-hover">
+    <button class="w3-button  w3-hover-white w3-padding-large">Management</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.Safety.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety KPI</a>
+
+    <!-- <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.AssyInhousePartAvailability.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Assy Inhouse Parts Availability KPI</a> -->
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.AssyInhouseLostCars.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Assy Inhouse Lost Cars KPI</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.AssyInhouseARanks.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Assy Inhouse A-Rank KPI</a>
+
+    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceScrap.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Conveyance Scrap</a>    
+
+<!--- still linked to Logistics Drive--->
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\ShopFloorManagement\2019\ShopFloorManagementKPIs2019.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Excel KPI 2019</a>
+
+<!--- still linked to Logistics Drive--->
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\ShopFloorManagement\2020\ShopFloorManagementKPIs2020.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Excel KPI 2020</a>
+
+<!--- still linked to Logistics Drive--->
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\ShopFloorManagement\ShopFloorManagementKPIs2021.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Excel KPI 2021</a>
+
+<!--- still linked to Logistics Drive--->
+    <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\ShopFloorManagement\2021\2021.AssemblyPassdown.RawData.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Passdown Raw Data 2021</a>
+
+    <!--<a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\ShopFloorManagement\ConveyanceDowntimeGraphs.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Conveyance Downtime Graphs</a> -->
+
+
+   </div>
+   </div>
+
+
+
+
+
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Header VW Logistics Header -->
+<header class="w3-container w3-flat-belize-hole w3-center" style="padding:128px 16px" id="home">
+  <h1 class="w3-margin w3-jumbo">Assembly Inhouse Logistics <br> Portal</h1> 
+    <img src="#">
+  
+  
+</header>
+
+
+
+
+
+
+
+<!-- First Grid Description Plus Support Staff -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Inhouse Logistics Facts</h1>
+      <h5 class="w3-padding-32">Inhouse is the Operational Wing of the Chattanooga Logistics Department.  We are responsible for the movement of product from arrival at plant to line delivery.</h5>
+
+      <p class="w3-text-grey">Divisions of Inhouse:<br>
+        TCC - Truck Control Center <br>
+	3PL - Third Party Logistics Providers (JIS, Warehousing, Sequencing, Container Management) <br>
+	Conveyance - VW/Aerotek Internal Logistics <br>
+	LCC - Logistics Control Center (Leitstand) <br>
+	Supplier Park <br>
+	Equipment Maintenance/TPM</p>
+    </div>
+
+    <div class="w3-third w3-center">
+
+  <h2 class="w3-center">Management / <br> Support Staff</h2>
+
+  <div class="w3-content w3-display-container">
+
+<!---  <div class="w3-display-container mySlides">
+   <img src="Ross.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Ross George
+	</div>
+   </div>
+--->
+
+  <div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Derik.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Derik Akers
+	<br>
+	Manager - Inhouse
+	</div>
+   </div>
+
+  <div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Gina.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Gina Keller
+	<br>
+	AM Conveyance/Assembly
+	</div>
+   </div>
+
+  <div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Melinda.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Melinda Jackson
+	<br>
+	AM Inhouse Support
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Steve.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Steve Jackson
+	<br>
+	Assembly Warehouse
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Carla.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Carla Collins
+	<br>
+	Assembly Linefeeding
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Daniel.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Daniel Yim
+	<br>
+	Body Shop
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Drew.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Drew Jennings
+	<br>
+	CMC
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Dennis.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Dennis Hasting
+	<br>
+	Supplier Park/TPM
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\GregB.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Greg Bryant
+	<br>
+	MHE/AQMS
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Trish.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Trish Pelzer
+	<br>
+	Container Management
+	</div>
+   </div>
+
+<div class="w3-display-container mySlides">
+   <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Fookes.jpg" style="width:100%">
+   <div class="w3-display-bottommiddle w3-container w3-padding-15 w3-white w3-border w3-border-black">
+	Andrew Fookes
+	<br>
+	3PL Contracts
+	</div>
+   </div>
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Second Grid Operational Contacts -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+        <div class="w3-container">
+  <h1>Operations Management</h1>
+  <br>
+ 
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+
+    
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\MattF.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Zone 1 - Days <br> Matt Francis <br> <a href="mailto:Allan.Wight@vw.com">matt.francis@vw.com</a> </h5>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Al.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Zone 2 - Days <br> Al Wight <br> <a href="mailto:Allan.Wight@vw.com">Allan.Wight@vw.com</a> </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Tim Cunningham.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Zone 3 - Days <br> Tim Cunningham <br> <a href="mailto:Tim.Cunningham@vw.com">Tim.Cunningham@vw.com</a> </h5>
+	</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\MikeK.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Zone 1 - Nights <br> Mike Kirkley <br> <a href="mailto:Michael.Kirkley@vw.com">Michael.Kirkley@vw.com</a> </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Tracy.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Zone 2 - Nights <br> Tracy Gay <br> <a href="mailto:Ira.Hinton@vw.com">Temp Contact:  Ira.Hinton@vw.com</a> </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\TeamPics\Billy H.jpg" style="width:100%">
+      <div class="w3-container">
+        <h5>Zone 3 - Nights <br> Billy Hearon <br> <a href="mailto:billy.hearon@vw.com">billy.hearon@vw.com</a> </h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <br>
+  <br>
+    </div>
+
+    <div class="w3-center">
+      <h1>Operational Contacts</h1>
+      <h3 class="w3-padding-32">Logistics Control Center</h3>
+
+      <p class="w3-text-grey">  <a href="mailto:VWGoADLLCC@vw.com">VWGoADLLCC@vw.com</a>  </p>
+    </div>    
+
+<br>
+<br>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 15px;
+}
+th, td {
+  text-align: center;
+}
+</style>
+ <table style="width:100%">
+  <tr>
+    <th>Zone</th>
+    <th>Shift</th>
+    <th>Name</th>
+    <th>Contact</th>
+    <th>Contact Zone</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> 
+
+     
+  </div>
+</div>
+
+
+
+
+
+<!-- Third Grid Linefeeding Project Plans -->
+<!---
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+        <div class="w3-container">
+  <h1>Linefeeding Projects</h1>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-left-align">
+      <h1>Under Construction</h1>
+      <h5 class="w3-padding-32">This Section is Currently Under Construction.</h5>
+
+      <p class="w3-text-grey">Check<br>
+        Back <br>
+	Later <br>
+	for <br>
+	Updates <br>
+	=)</p>
+    </div>
+--->
+
+ 
+     
+  </div>
+</div>
+
+
+<!-- Fourth Grid New Team Members Items -->
+
+<div class="w3-row-padding w3-flat-asbestos w3-padding-64 w3-container" id="newtm">
+  <div class="w3-content">
+    <div class="w3-center">
+        <div class="w3-container">
+  <h1>New Team Member Items</h1>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-left-align">
+
+	<h3>Training Forms</h3>
+
+	 <p><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\NewTeamMembers\New TM Training Packet.pdf" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Training Packet</a>
+
+	    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\NewTeamMembers\Tugger Performance Evaluation.pdf" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Tugger Evaluation</a>	 
+	 </p>
+
+	<h3>Training Overview</h3>
+
+	 <p><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\NewTeamMembers\New Team Member Training Class.pdf" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Training Class</a>
+
+	    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\RulesoftheRoad.Rev0.pdf" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Rules of the Road</a>	 	 
+	 </p>
+
+	<h3>System Forms</h3>
+
+	 <p><a href="https://eworkflow.cha1.vwoa.na.vwg/workspace.aspx" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" >SAP Request Form</a>
+
+	    <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\NewTeamMembers\Orga57a.Blank.pdf" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Org A *Fill Out Prior*</a>	 
+ 	 
+	 
+	 </p>
+      
+
+	<h5 class="w3-padding-32">*Remember to Scan Training Forms to Conveyance Documentation Sharedrive!*</h5>
+
+
+    </div>
+
+	<p><a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+	</p>
+ 
+     
+  </div>
+</div>
+
+
+<!-- MISSION STATEMENT -->
+
+<div class="w3-container w3-flat-midnight-blue w3-center w3-padding-64">
+	<div class="w3-content">
+    	<div class="w3-center">
+    <h1 class="w3-margin w3-xlarge">Assembly Inhouse Logistics</h1>
+    <img src="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\InhousePortal\OtherPics\missionstatement.png" class="w3-round" alt="Mission Statement">
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+                            
+
+
+
+</body>
+</html>
