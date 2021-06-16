@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Intranet site for Body Shop Inhouse Logistics>
 <meta name=" author " content="Shawn Stewart ">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js "></script>
 <link rel="shortcut icon " href="images/VW Logo Blue.png ">
 <link rel="stylesheet " href="https://www.w3schools.com/w3css/4/w3.css ">
 <link rel="stylesheet " href="https://fonts.googleapis.com/css?family=Raleway ">
@@ -45,7 +44,31 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small ">
 
-      <!--- LCC DROP DOWN, formatting needed --->
+    <!-- FORMS DROPDOWN --> 
+    
+      <div class="w3-dropdown-hover">
+        <button class="w3-button  w3-white">FORMS</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+
+          <!-- NA to Body Shop
+          <a href="#newtm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">New Team Member</a>
+          -->
+
+          <!-- NA to Body Shop
+          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\TopicSheet.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Topic Sheet</a>
+          -->
+
+
+          <a href="http://10.139.6.97/ChaMPSWorkRequest/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Work Order Form/CHAMPS</a>
+
+          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Application Request Form-5.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">SAP Request Form</a>   
+
+          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\2021 PowerPoint template.pptx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">VW Powerpoint Template</a>
+
+        </div>
+      </div>
+
+      <!--- LCC DROP DOWN --->
       <div class="w3-dropdown-hover">
         <button class="w3-button w3-white">LCC</button>
         <div class="w3-dropdown-content w3-bar-block w3-border">    
@@ -70,7 +93,7 @@ body, html {
       
           <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Dock Schedule</a>
 
-          <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Warehouse Slotting</a>
+          <a href="assets/Body Shop Slotting.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Warehouse Slotting</a>
 
           <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">eKanban</a>
 
@@ -86,7 +109,7 @@ body, html {
 
           <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">KLT Route Maps</a>
 
-          <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">KLT Route Maps</a>
+          <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">GLT - KLT Master database</a>
 
         </div>
       </div>
@@ -233,6 +256,10 @@ body, html {
            ref="file://///na.vwg/Chattanooga/File/CM-ManufacturingWeb/Webpage/Tech%20Change%20Page.htm " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Technical Change Webpage
           </a>
 
+          <a 
+           ref="file://///na.vwg/chattanooga/File/CL-I_PE_Cross_Functional/InhouseDocuments/InhousePortal/AssemblyInhousePortal.html " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Assembly Inhouse Portal
+          </a>
+
           <a
            href="assets/Body Shop Slotting.xlsx " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Slotting Database
           </a>
@@ -297,8 +324,6 @@ body, html {
   </div> 
 </div>
 
-
-
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none
  " id="mySidebar ">
@@ -306,9 +331,7 @@ body, html {
   <a href="#about " onclick="w3_close() " class="w3-bar-item w3-button ">ABOUT</a>
   <a href="#team " onclick="w3_close() " class="w3-bar-item w3-button ">TEAM</a>
 </nav>
-
 <!-- Header with full-height image -->
-
 <header class="bgimg-1 w3-display-container w3-grayscale-min " id="home ">
 
   <div class="w3-display-left w3-text-white " style="padding:96px " height="100px ">
@@ -316,9 +339,6 @@ body, html {
   </div>
 
 </header>
-
-
-
 
 <!-- About Section -->
 <div class="w3-container " style="padding:128px 16px " id="about ">
@@ -369,30 +389,30 @@ body, html {
 </div>
 
 <!-- Team Section -->
-<div class="w3-container " style="padding:128px 16px " id="team ">
+<div class="w3-container " style="padding:128px 16px 64px " id="team ">
   <h3 class="w3-center ">THE TEAM</h3>
   <p class="w3-center w3-large ">The ones who run this department</p>
    <div class="w3-row-padding w3-grayscale " style="margin-top:64px ">
   
-    <div class="w3-col l3 m6 w3-margin-bottom ">
-      <div class="w3-card ">
-        <img src="# " alt="Derik " style="width:100% ">
+    <div class="w3-col l3 m6 w3-margin-bottom" >
+      <div class="w3-card">
+        <img src="images\AkersDerik.jpg" alt="Derik " style="width:100% ">
         <div class="w3-container ">
           <h3>Derik Akers</h3>
           <p class="w3-opacity ">AM, Inhouse Logistics</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><!--Text Here--></p>
           <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
         </div>
       </div>
     </div>
     
     <div class="w3-col l3 m6 w3-margin-bottom ">
-      <div class="w3-card ">
-        <img src="# " alt="Melinda " style="width:100% ">
+      <div class="w3-card">
+        <img src="images\JacksonMelinda.jpg " alt="Melinda " style="width:100% ">
         <div class="w3-container ">
           <h3>Melinda Jackson</h3>
           <p class="w3-opacity ">AM, Log Operational Support</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><!--Text Here--></p>
           <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
         </div>
       </div>
@@ -400,11 +420,11 @@ body, html {
     
     <div class="w3-col l3 m6 w3-margin-bottom ">
       <div class="w3-card ">
-        <img src="# " alt="Daniel " style="width:100% ">
+        <img src="images\YimHyun-Joon.jpg" alt="Daniel " style="width:100%  ">
         <div class="w3-container ">
           <h3>Daniel Yim</h3>
           <p class="w3-opacity ">IE Warehouse Specialist</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><!--Text Here--></p>
           <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
         </div>
       </div>
@@ -412,30 +432,29 @@ body, html {
     
     <div class="w3-col l3 m6 w3-margin-bottom ">
       <div class="w3-card ">
-        <img src="# " alt="Patricia " style="width:100% ">
+        <img src="images\PelzerPatricia.jpg" alt="Patricia " style="width:100% ">
         <div class="w3-container ">
           <h3>Patricia Pelzer</h3>
           <p class="w3-opacity ">CMC Process Control Specialist</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><!--Text Here--></p>
           <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
         </div>
       </div>
     </div>
-    
+
+    <!--dectivated
     <div class="w3-col l3 m6 w3-margin-bottom ">
       <div class="w3-card ">
         <img src="# " alt="# " style="width:100% ">
         <div class="w3-container ">
           <h3>First Last</h3>
           <p class="w3-opacity ">Job Title</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>  </p>
           <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
         </div>
       </div>
     </div>
-    
-   
-  
+    -->
   </div>
 </div>
 
