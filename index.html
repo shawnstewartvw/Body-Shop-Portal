@@ -1,597 +1,661 @@
 <!DOCTYPE html>
 <html>
-<title>Body Shop Inhouse Portal WIP</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Intranet site for Body Shop Inhouse Logistics>
-<meta name=" author " content="Shawn Stewart ">
-<link rel="shortcut icon " href="images/VW Logo Blue.png ">
-<link rel="stylesheet " href="https://www.w3schools.com/w3css/4/w3.css ">
-<link rel="stylesheet " href="https://fonts.googleapis.com/css?family=Raleway ">
-<link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway ", sans-serif}
+  <title>Body Shop Inhouse Portal WIP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Intranet site for Body Shop Inhouse Logistics>
+  <meta name=" author " content="Shawn Stewart ">
+  <link rel="shortcut icon " href="images/VW Logo Blue.png ">
+  <link rel="stylesheet " href="https://www.w3schools.com/w3css/4/w3.css ">
+  <link rel="stylesheet " href="https://fonts.googleapis.com/css?family=Raleway ">
+  <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway ", sans-serif}
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position: fit;
-  background-size: cover;
-  background-image: url("images/RedID403.jpg ");
-  min-height: 100%;
-}
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: fit;
+      background-size: cover;
+      background-image: url("images/RedID403.jpg ");
+      min-height: 100%;
+    }
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
 
-</style>
+  </style>
 
-<body>
+  <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top ">
-  <div class="w3-bar w3-white w3-card " id="myNavbar ">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top ">
+      <div class="w3-bar w3-white w3-card " id="myNavbar ">
 
-    <!-- HOME BUTTON -->
-    <a href="#home " class="w3-bar-item w3-button w3-wide " > HOME</a>
+        <!-- HOME BUTTON -->
+        <a href="#home " class="w3-bar-item w3-button w3-wide " > HOME</a>
 
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small ">
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small ">
 
 
-      <!-- MEB Readiness/Logistics Launch DROP DOWN -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button  w3-white ">LOGISTICS LAUNCH</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">    
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\Launch\LaunchTeam.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Logistics Launch Team</a>
-         
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 1 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 1 Readiness</a>
-          -->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 2 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 2 Readiness</a>
-          -->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 3 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 3 Readiness</a>
-          -->
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\delivery rack readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Pre-Series Equipment Readiness</a>
-
-          <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Pre-Series Equipment Staging Map</a>
-          
-        </div>
-      </div>
-
-      <!-- FORMS DROPDOWN --> 
-      <div class="w3-dropdown-hover">
-        <button class="w3-button  w3-white">FORMS</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">
-
-          <a href="http://10.139.6.97/ChaMPSWorkRequest/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Work Order Form/CHAMPS</a>
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Application Request Form-5.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">SAP Request Form</a>   
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\2021 PowerPoint template.pptx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">VW Powerpoint Template</a>
-
-          <!-- NA to Body Shop
-          <a href="#newtm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">New Team Member</a>
-          -->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\TopicSheet.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Topic Sheet</a>
-          -->
-
-        </div>
-      </div>
-
-      <!-- LCC DROP DOWN -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-white">LCC</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">    
-
-          <a href="https://vwoachvxenapp01/Citrix/VWGoAChattanoogaWeb/" class="w3-bar-item w3-button w3-padding-large w3-white">Citrix</a>
-
-          <a href="http://cha-reporting/" class="w3-bar-item w3-button w3-padding-large w3-white">Plant Reporting</a>
-
-          <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\Forms\LCCCalculations.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">LCC Calculations</a>
-
-          <!-- NA to Body Shop
-          <a href="http://10.139.250.39:46120/COBRA/Leitstand/" class="w3-bar-item w3-button w3-padding-large w3-white">Cobra Leitstand</a>
-          -->
-
-        </div>
-      </div>
-
-      <!-- WAREHOUSE DROP DOWN, Links needed -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-white">WAREHOUSE</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">
-      
-          <a href="documents/BodyShopDockSchedule.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Dock Schedule</a>
-
-          <a href="documents/BodyShopWarehouseSlotting.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Warehouse Slotting</a>
-
-          <a href="documents/BodyShopeKanban.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">eKanban</a>
-
-        </div>
-      </div>
-
-      <!-- CONVEYANCE DROP DOWN, Links needed -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-white">CONVEYANCE</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">    
-
-          <a href="documents\BodyShopRouteMaps.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Route Maps</a>
-
-          <a href="documents\BodyShopSealantPadMaps.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Sealant Pad Maps</a>
-
-          <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">GLT - KLT Master database</a>
-
-        </div>
-      </div>
-
-      <!-- PROJECTS DROP DOWN, Links needed -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-white">PROJECTS</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">    
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\LogPlanningOrganization.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Log. Planning Contact List</a>
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\Shutdowns\CW22 2021 Shutdown\SummerShutdown2021_AssemblyLogistics_ProjectTracker.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Shutdown Project Tracker</a>
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\AssemblyLinefeedingProjectPlan.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">2021 Linefeeding Project Plan</a>
-          -->
-
-          <!---
-          <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\Projects\LineFeedingProjectPlan.Coupe0SeriesReadiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Coupe Processes</a>
-          --->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 1 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 1 Weekly Project Meeting Notes</a>
-          --->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 2 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 2 Weekly Project Meeting Notes</a>
-          --->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 3 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 3 Weekly Project Meeting Notes</a>
-          --->
- 
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\AGV timelineUpdate.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">AGV Timeline</a>
-          --->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeekendWork\Assembly Logistics Weekend Work.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Weekend Work</a>
-          --->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.Timeline.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking Timeline</a>
-          --->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.CIPOP.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking CIP/Open Points</a>
-          --->
-           
-        </div>
-      </div>
-
-      <!-- KPIs DROP DOWN, formatting need -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-white">KPI</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">    
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.Safety.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety</a>
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceDowntime.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Downtime</a>
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceARanks.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">A-Ranks</a>
-          -->
-
-          <!---
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceMissingParts.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Missing Parts</a>
-          --->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.Scrap.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Scrap</a>
-          -->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\SCRAP PDF\WEEKLY NCD REPORT.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Scrap Tracker</a>
-          -->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.5SAudit.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">5S</a>
-          -->
-
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\2021 Process Audit Overview.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Process Audit Overview</a>
-          -->
-
-        </div>
-
-      </div>
-
-      <!-- SAFETY DROP DOWN, formatting and Links needed -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-white">SAFETY</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">    
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety Heat Map 2021.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Heat Map 2021</a>
-          
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety Heat Map 2020.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Heat Map 2020</a>
-
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\RulesoftheRoad.Rev0.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Rules of the Road</a>
-
-          <!-- SAFETY ALERT DROP DOWN -->
+          <!-- MEB Readiness/Logistics Launch DROP DOWN -->
           <div class="w3-dropdown-hover">
-            <button class="w3-button  w3-white w3-padding-large">Safety Alerts</button>
+            <button class="w3-button  w3-white ">LOGISTICS LAUNCH</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\Launch\LaunchTeam.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Logistics Launch Team</a>
+            
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 1 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 1 Readiness</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 2 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 2 Readiness</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\zone 3 readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 3 Readiness</a>
+              -->
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\PreSeries.AEKO.MY\MEB.ID4\PartList\delivery rack readiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Pre-Series Equipment Readiness</a>
+
+              <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Pre-Series Equipment Staging Map</a>
+              
+            </div>
+          </div>
+
+          <!-- FORMS DROPDOWN --> 
+          <div class="w3-dropdown-hover">
+            <button class="w3-button  w3-white">FORMS</button>
             <div class="w3-dropdown-content w3-bar-block w3-border">
 
-              <ul class ="sub1">
+              <a href="http://10.139.6.97/ChaMPSWorkRequest/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Work Order Form/CHAMPS</a>
 
-                <li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Incident Report - Recordable Injury.oft" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Recordable Distribution</a>
-               
-                <li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Incident Report - Property Damage.Near Miss.oft" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Near Miss Distribution</a>
-               
-                <li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Universal Safety Alert.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Alert</a>
-              
-              </ul>
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\Application Request Form-5.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">SAP Request Form</a>   
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\2021 PowerPoint template.pptx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">VW Powerpoint Template</a>
+
+              <a href="documents\Equipment-damage-or-loss-or-theft-report-form.doc" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">EDLT Report Form</a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\Dock Release Form.CHA.docx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Dock Release Form</a>
+
+              <!-- NA to Body Shop
+              <a href="#newtm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">New Team Member</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\Forms\TopicSheet.xlsm" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Topic Sheet</a>
+              -->
 
             </div>
           </div>
 
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Logistics Safety Leads.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Leads</a>
-          -->
+          <!-- LCC DROP DOWN -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-white">LCC</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">    
 
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\LogisticsSafetyIncidentCalendar.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Calendar</a>
-          -->
+              <a href="https://vwoachvxenapp01/Citrix/VWGoAChattanoogaWeb/" class="w3-bar-item w3-button w3-padding-large w3-white">Citrix</a>
 
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety IIP 2021.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety IIP 2021</a>
-          -->
+              <a href="http://cha-reporting/" class="w3-bar-item w3-button w3-padding-large w3-white">Plant Reporting</a>
 
-          <!-- NA to Body Shop
-          <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Safety Guide Audit.Logistics.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Guide Audit</a>
-          -->
+              <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\Forms\LCCCalculations.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">LCC Calculations</a>
 
-        </div>
-      </div>
+              <!-- NA to Body Shop
+              <a href="http://10.139.250.39:46120/COBRA/Leitstand/" class="w3-bar-item w3-button w3-padding-large w3-white">Cobra Leitstand</a>
+              -->
 
-      <!-- USEFUL SITES DROP DOWN -->
-      <div class="w3-dropdown-hover">
-        <button class="w3-button w3-white ">USEFUL SITES</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border ">    
+            </div>
+          </div>
 
-          <a 
-           href="file://///na.vwg/Chattanooga/File/CM-ManufacturingWeb/Webpage/Tech%20Change%20Page.htm " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Technical Change Webpage
-          </a>
-
-          <a 
-           href="file://///na.vwg/chattanooga/File/CL-I_PE_Cross_Functional/InhouseDocuments/InhousePortal/AssemblyInhousePortal.html " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Assembly Inhouse Portal
-          </a>
-
-          <a
-           href="https://dashboard.vwoa.na.vwg/ " class="w3-bar-item w3-button w3-padding-large w3-white">Dashboard
-          </a>
-
-         <a
-           href="https://dashboard.vwoa.na.vwg/documents/21041/51898248/2021+Operating +Calendars/0e232b46-5dc7-6866-d8bd-1d489edb0f1e" class="w3-bar-item w3-button w3-padding-large w3-white ">2021 Operating Calendar
-         </a>
-
-          <a
-           href="https://dashboard.vwoa.na.vwg/web/quality-management-system/logistics" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">QMS
-          </a>
-
-          <a
-           href="https://performancemanager8.successfactors.com/login?company=volkswag03&loginMethod=PWD#/login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">Success Factors
-          </a>
-
-          <a
-           href="https://group-wiki.wob.vw.vwg/wikis/display/VWWIKI/Home " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">VW Wiki
-          </a>
-
-          <a
-           href="http://vwb.wob.vw.vwg/ " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">VW Dictionary
-          </a>
-
-          <a
-           href="http://cha-reporting:85/ListOverview.aspx " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">Plant Reporting (Read Only)
-          </a>
-
-          <a
-           href="http://10.139.6.97/ChaMPSGeneralStoreParts/Home/PartsSearch " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">General Store Parts Search
-          </a>
-
-          <!-- Inaccessible link
-          <a
-           href="file:///\\vwoachsfile01\production\Master Database\KLT-GLT Database\KLTGLT Master List.xlsm " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">KLT-GLT Database
-          </a>
-          -->
-
-          <a
-           href="https://dashboard.vwoa.na.vwg/documents/46280/11661974/Regelung_Prozessaudit_Stand_Nov2017_V2_final_EN_mit_Anlagen.pdf/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">Process Audit Standard
-          </a>
-
-          <a
-           href="https://dashboard.vwoa.na.vwg/documents/46280/11661974/Regulation+for+the+division+Group+Quality+Logistik-Prozessaudit_ENG.pdf/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">VDA Standard
-          </a>
+          <!-- WAREHOUSE DROP DOWN, Links needed -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-white">WAREHOUSE</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
           
-        </div>
-      </div>
+              <a href="documents/BodyShopDockSchedule.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Dock Schedule</a>
 
-      <!-- REF BUTTONS -->
-      <a href="#about " class="w3-bar-item w3-button ">ABOUT </a>
-      <a href="#team " class="w3-bar-item w3-button ">TEAM </a>
-      <a href="#standardwork " class="w3-bar-item w3-button ">STANDARD WORK </a>
+              <a href="documents/BodyShopWarehouseSlotting.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Warehouse Slotting</a>
 
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0) " class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium " onclick="w3_open() ">
-       <i class="fa fa-bars "></i>
-      </a>
+              <a href="documents/BodyShopeKanban.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">eKanban</a>
 
-    </div> 
-  </div> 
-</div>
+            </div>
+          </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#standardwork" onclick="w3_close()" class="w3-bar-item w3-button">STANDARD WORK</a>
-</nav>
+          <!-- CONVEYANCE DROP DOWN, Links needed -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-white">CONVEYANCE</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">    
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min " id="home ">
+              <a href="documents\BodyShopRouteMaps.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Route Maps</a>
 
-  <div class="w3-display-left w3-text-white " style="padding:128px " height="128px ">
-    <span class="w3-jumbo w3-hide-small "><br>Body Shop Logistics</span>
-  </div>
+              <a href="documents\BodyShopSealantPadMaps.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Sealant Pad Maps</a>
 
-</header>
+              <a href="file:..." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">GLT - KLT Master database</a>
 
-<!-- About Section -->
-<div class="w3-container " style="padding:128px 16px " id="about ">
-  <h3 class="w3-center ">ABOUT THE DEPARTMENT</h3>
-  <p class="w3-center w3-large ">Key functions of our department</p>
-  <div class="w3-row-padding w3-center " style="margin-top:64px ">
-    <div class="w3-quarter ">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center "></i>
-      <p class="w3-large ">Warehousing Ops</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter ">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo "></i>
-      <p class="w3-large ">Logistics Control Center</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter ">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo "></i>
-      <p class="w3-large ">Container Management Center</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter ">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo "></i>
-      <p class="w3-large ">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
-</div>
+            </div>
+          </div>
 
-<!-- Promo Section "Statistics " -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64 ">
-  <div class="w3-quarter ">
-    <span class="w3-xxlarge ">XX</span>
-    <br>Stat Title
-  </div>
-  <div class="w3-quarter ">
-    <span class="w3-xxlarge ">XX</span>
-    <br>Stat Title
-  </div>
-  <div class="w3-quarter ">
-    <span class="w3-xxlarge ">XX</span>
-    <br>Stat Title
-  </div>
-  <div class="w3-quarter ">
-    <span class="w3-xxlarge ">XX</span>
-    <br>Stat Title
-  </div>
-</div>
+          <!-- PROJECTS DROP DOWN, Links needed -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-white">PROJECTS</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">    
 
-<!-- Team Section -->
-<div class="w3-container " style="padding:128px 16px " id="team ">
-  <h3 class="w3-center ">THE TEAM</h3>
-  <p class="w3-center w3-large ">The ones who run this department</p>
-   <div class="w3-row-padding w3-grayscale " style="margin-top:64px ">
-  
-    <div class="w3-col l3 m6 w3-margin-bottom" >
-      <div class="w3-card">
-        <img src="images\AkersDerik.jpg" alt="Derik " style="width:100% ">
-        <div class="w3-container ">
-          <h3>Derik Akers</h3>
-          <p class="w3-opacity ">AM, Inhouse Logistics</p>
-          <p><!--Text Here--></p>
-          <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\LogPlanningOrganization.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Log. Planning Contact List</a>
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\Shutdowns\CW22 2021 Shutdown\SummerShutdown2021_AssemblyLogistics_ProjectTracker.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Shutdown Project Tracker</a>
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\AssemblyLinefeedingProjectPlan.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">2021 Linefeeding Project Plan</a>
+              -->
+
+              <!---
+              <a href="file:///\\na.vwg\Chattanooga\Dept\CL\LOGISTICS DRIVE\CL-I\Inhouse\Carla Collins\Webpage\Projects\LineFeedingProjectPlan.Coupe0SeriesReadiness.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Coupe Processes</a>
+              --->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 1 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 1 Weekly Project Meeting Notes</a>
+              --->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 2 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 2 Weekly Project Meeting Notes</a>
+              --->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeeklyMaterialFlowProjectMeetings\Zone 3 Line Delivery - Weekly Project Meeting.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Zone 3 Weekly Project Meeting Notes</a>
+              --->
     
-    <div class="w3-col l3 m6 w3-margin-bottom ">
-      <div class="w3-card">
-        <img src="images\JacksonMelinda.jpg " alt="Melinda " style="width:100% ">
-        <div class="w3-container ">
-          <h3>Melinda Jackson</h3>
-          <p class="w3-opacity ">AM, Log Operational Support</p>
-          <p><!--Text Here--></p>
-          <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
-        </div>
-      </div>
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\AGV timelineUpdate.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">AGV Timeline</a>
+              --->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\ProjectMtgs.Shutdowns.WeekendWork\WeekendWork\Assembly Logistics Weekend Work.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Weekend Work</a>
+              --->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.Timeline.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking Timeline</a>
+              --->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\DigitalPicking\DigitalPicking.CIPOP.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Digital Picking CIP/Open Points</a>
+              --->
+              
+            </div>
+          </div>
+
+          <!-- KPIs DROP DOWN, formatting need -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-white">KPI</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.Safety.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety</a>
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceDowntime.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Downtime</a>
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceARanks.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">A-Ranks</a>
+              -->
+
+              <!---
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.ConveyanceMissingParts.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Missing Parts</a>
+              --->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.Scrap.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Scrap</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\SCRAP PDF\WEEKLY NCD REPORT.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Scrap Tracker</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\ShopFloorManagementKPIs.5SAudit.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">5S</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\2021 Process Audit Overview.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Process Audit Overview</a>
+              -->
+
+            </div>
+
+          </div>
+
+          <!-- SAFETY DROP DOWN, formatting and Links needed -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-white">SAFETY</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">    
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety Heat Map 2021.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Heat Map 2021</a>
+              
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety Heat Map 2020.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Heat Map 2020</a>
+
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\RulesoftheRoad.Rev0.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Rules of the Road</a>
+
+              <!-- SAFETY ALERT DROP DOWN -->
+              <div class="w3-dropdown-hover">
+                <button class="w3-button  w3-white w3-padding-large">Safety Alerts</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border">
+
+                  <ul class ="sub1">
+
+                    <li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Incident Report - Recordable Injury.oft" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Recordable Distribution</a>
+                  
+                    <li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Incident Report - Property Damage.Near Miss.oft" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Near Miss Distribution</a>
+                  
+                    <li><a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Universal Safety Alert.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Alert</a>
+                  
+                  </ul>
+
+                </div>
+              </div>
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Logistics Safety Leads.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Leads</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\LogisticsSafetyIncidentCalendar.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Calendar</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\KPIs\Logistics Safety IIP 2021.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety IIP 2021</a>
+              -->
+
+              <!-- NA to Body Shop
+              <a href="file:///\\na.vwg\Chattanooga\File\CL-I_PE_Cross_Functional\InhouseDocuments\LogisticsSafetyCommittee\Safety Guide Audit.Logistics.xlsx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Safety Guide Audit</a>
+              -->
+
+            </div>
+          </div>
+
+          <!-- USEFUL SITES DROP DOWN -->
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-white ">USEFUL SITES</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border ">    
+
+              <a 
+              href="file://///na.vwg/Chattanooga/File/CM-ManufacturingWeb/Webpage/Tech%20Change%20Page.htm " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Technical Change Webpage
+              </a>
+
+              <a 
+              href="file://///na.vwg/chattanooga/File/CL-I_PE_Cross_Functional/InhouseDocuments/InhousePortal/AssemblyInhousePortal.html " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray">Assembly Inhouse Portal
+              </a>
+
+              <a
+              href="https://dashboard.vwoa.na.vwg/ " class="w3-bar-item w3-button w3-padding-large w3-white">Dashboard
+              </a>
+
+            <a
+              href="https://dashboard.vwoa.na.vwg/documents/21041/51898248/2021+Operating +Calendars/0e232b46-5dc7-6866-d8bd-1d489edb0f1e" class="w3-bar-item w3-button w3-padding-large w3-white ">2021 Operating Calendar
+            </a>
+
+              <a
+              href="https://dashboard.vwoa.na.vwg/web/quality-management-system/logistics" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">QMS
+              </a>
+
+              <a
+              href="https://performancemanager8.successfactors.com/login?company=volkswag03&loginMethod=PWD#/login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">Success Factors
+              </a>
+
+              <a
+              href="https://group-wiki.wob.vw.vwg/wikis/display/VWWIKI/Home " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">VW Wiki
+              </a>
+
+              <a
+              href="http://vwb.wob.vw.vwg/ " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">VW Dictionary
+              </a>
+
+              <a
+              href="http://cha-reporting:85/ListOverview.aspx " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">Plant Reporting (Read Only)
+              </a>
+
+              <a
+              href="http://10.139.6.97/ChaMPSGeneralStoreParts/Home/PartsSearch " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">General Store Parts Search
+              </a>
+
+              <!-- Inaccessible link
+              <a
+              href="file:///\\vwoachsfile01\production\Master Database\KLT-GLT Database\KLTGLT Master List.xlsm " class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">KLT-GLT Database
+              </a>
+              -->
+
+              <a
+              href="https://dashboard.vwoa.na.vwg/documents/46280/11661974/Regelung_Prozessaudit_Stand_Nov2017_V2_final_EN_mit_Anlagen.pdf/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">Process Audit Standard
+              </a>
+
+              <a
+              href="https://dashboard.vwoa.na.vwg/documents/46280/11661974/Regulation+for+the+division+Group+Quality+Logistik-Prozessaudit_ENG.pdf/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gray ">VDA Standard
+              </a>
+              
+            </div>
+          </div>
+
+          <!-- REF BUTTONS -->
+          <a href="#about " class="w3-bar-item w3-button ">ABOUT </a>
+          <a href="#team " class="w3-bar-item w3-button ">TEAM </a>
+          <a href="#standardwork " class="w3-bar-item w3-button ">STANDARD WORK </a>
+
+          <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+          <a href="javascript:void(0) " class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium " onclick="w3_open() ">
+          <i class="fa fa-bars "></i>
+          </a>
+
+        </div> 
+      </div> 
     </div>
-    
-    <div class="w3-col l3 m6 w3-margin-bottom ">
-      <div class="w3-card ">
-        <img src="images\YimHyun-Joon.jpg" alt="Daniel " style="width:100%  ">
-        <div class="w3-container ">
-          <h3>Daniel Yim</h3>
-          <p class="w3-opacity ">IE Warehouse Specialist</p>
-          <p><!--Text Here--></p>
-          <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
-        </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      <a href="#standardwork" onclick="w3_close()" class="w3-bar-item w3-button">STANDARD WORK</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min " id="home ">
+
+      <div class="w3-display-left w3-text-white " style="padding:128px " height="128px ">
+        <span class="w3-jumbo w3-hide-small "><br>Body Shop Logistics</span>
       </div>
-    </div>
-    
-    <div class="w3-col l3 m6 w3-margin-bottom ">
-      <div class="w3-card ">
-        <img src="images\PelzerPatricia.jpg" alt="Patricia " style="width:100% ">
-        <div class="w3-container ">
-          <h3>Patricia Pelzer</h3>
-          <p class="w3-opacity ">CMC Process Control Specialist</p>
-          <p><!--Text Here--></p>
-          <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container " style="padding:128px 16px " id="about ">
+      <h3 class="w3-center ">ABOUT THE DEPARTMENT</h3>
+      <p class="w3-center w3-large ">Key functions of our department</p>
+      <div class="w3-row-padding w3-center " style="margin-top:64px ">
+        <div class="w3-quarter ">
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center "></i>
+          <p class="w3-large ">Warehousing Ops</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="w3-quarter ">
+          <i class="fa fa-heart w3-margin-bottom w3-jumbo "></i>
+          <p class="w3-large ">Logistics Control Center</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="w3-quarter ">
+          <i class="fa fa-diamond w3-margin-bottom w3-jumbo "></i>
+          <p class="w3-large ">Container Management Center</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="w3-quarter ">
+          <i class="fa fa-cog w3-margin-bottom w3-jumbo "></i>
+          <p class="w3-large ">Support</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
         </div>
       </div>
     </div>
 
-    <!--dectivated
-    <div class="w3-col l3 m6 w3-margin-bottom ">
-      <div class="w3-card ">
-        <img src="# " alt="# " style="width:100% ">
-        <div class="w3-container ">
-          <h3>First Last</h3>
-          <p class="w3-opacity ">Job Title</p>
-          <p>  </p>
-          <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
+    <!-- Promo Section "Statistics " -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64 ">
+      <div class="w3-quarter ">
+        <span class="w3-xxlarge ">XX</span>
+        <br>Stat Title
+      </div>
+      <div class="w3-quarter ">
+        <span class="w3-xxlarge ">XX</span>
+        <br>Stat Title
+      </div>
+      <div class="w3-quarter ">
+        <span class="w3-xxlarge ">XX</span>
+        <br>Stat Title
+      </div>
+      <div class="w3-quarter ">
+        <span class="w3-xxlarge ">XX</span>
+        <br>Stat Title
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="w3-container " style="padding:128px 16px " id="team">
+      <h3 class="w3-center ">THE TEAM</h3>
+      <p class="w3-center w3-large ">The ones who run this department</p>
+      <div class="w3-row-padding w3-grayscale " style="margin-top:64px">
+      
+        <div class="w3-col l3 m6 w3-margin-bottom" >
+          <div class="w3-card">
+            <img src="images\AkersDerik.jpg" alt="Derik " style="width:100% ">
+            <div class="w3-container ">
+              <h3>Derik Akers</h3>
+              <p class="w3-opacity ">AM, Inhouse Logistics</p>
+              <p><!--Text Here--></p>
+              <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w3-col l3 m6 w3-margin-bottom ">
+          <div class="w3-card">
+            <img src="images\JacksonMelinda.jpg " alt="Melinda " style="width:100% ">
+            <div class="w3-container ">
+              <h3>Melinda Jackson</h3>
+              <p class="w3-opacity ">AM, Log Operational Support</p>
+              <p><!--Text Here--></p>
+              <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w3-col l3 m6 w3-margin-bottom ">
+          <div class="w3-card ">
+            <img src="images\YimHyun-Joon.jpg" alt="Daniel " style="width:100%  ">
+            <div class="w3-container ">
+              <h3>Daniel Yim</h3>
+              <p class="w3-opacity ">IE Warehouse Specialist</p>
+              <p><!--Text Here--></p>
+              <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w3-col l3 m6 w3-margin-bottom ">
+          <div class="w3-card ">
+            <img src="images\PelzerPatricia.jpg" alt="Patricia " style="width:100% ">
+            <div class="w3-container ">
+              <h3>Patricia Pelzer</h3>
+              <p class="w3-opacity ">CMC Process Control Specialist</p>
+              <p><!--Text Here--></p>
+              <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <!--dectivated
+        <div class="w3-col l3 m6 w3-margin-bottom ">
+          <div class="w3-card ">
+            <img src="# " alt="# " style="width:100% ">
+            <div class="w3-container ">
+              <h3>First Last</h3>
+              <p class="w3-opacity ">Job Title</p>
+              <p>  </p>
+              <p><button class="w3-button w3-light-grey w3-block "><i class="fa fa-envelope "></i> Contact</button></p>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+
+    <!-- Work Section, alternate layout for "Standard Work"
+    <div class="w3-container" style="padding:128px 16px" id="work">
+      <h3 class="w3-center">OUR WORK</h3>
+      <p class="w3-center w3-large">What we've done for people</p>
+
+      <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
         </div>
       </div>
     </div>
     -->
-  </div>
-</div>
 
-<!-- Standard Work Section -->
-<div class="w3-container " style="padding:128px 16px " id="standardwork ">
-  <h3 class="w3-center ">Standard Work</h3>
-  <p class="w3-center w3-large ">If you can't describe what you are doing as a process, you don't know what you're doing.<br>-W. Edwards Deming</p>
-   <div class="w3-row-padding w3-grayscale " style="margin-top:64px ">
-  
-    <div class="w3-col l3 m6 w3-margin-bottom" >
-      <div class="w3-card">
-        <img src="images.jpg" alt="images.jpg " style="width:100% ">
-        <div class="w3-container ">
-          <h3>Heading</h3>
-          <p class="w3-opacity ">Sub heading</p>
-          <p>Body Text</p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
+    <!-- Standard Work Section -->
+    <div class="w3-container " style="padding:128px 16px " id="standardwork ">
+      <h3 class="w3-center ">Standard Work</h3>
+      <p class="w3-center w3-large ">"If you can't describe what you are doing as a process, you don't know what you're doing."<br>-W. Edwards Deming</p>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:64px ">
+      
+        <div class="w3-col l3 m6 w3-margin-bottom" >
+          <div class="w3-card">
+            <div class="w3-container ">
+              <h3>Section 1</h3>
+              <p class="w3-opacity "></p>
+              <p></p>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\LD-1.1 Delivery.CHA.pptx">
+                <p><button class="w3-button w3-light-grey w3-block "> 1.1 Delivery</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\LD-1.2 Delivery.CHA.pptx">
+                <p><button class="w3-button w3-light-grey w3-block "> 1.2 Delivery</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\LD-1.3 Delivery.CHA.pptx">
+                <p><button class="w3-button w3-light-grey w3-block "> 1.3 Delivery</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\LD-1.4 Delivery.CHA.pptx">
+                <p><button class="w3-button w3-light-grey w3-block "> 1.4 Delivery</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\LD-A-Pillar.CHA.pptx">
+                <p><button class="w3-button w3-light-grey w3-block">A-Pillar</button></p>
+              </a>
+
+            </div>
+          </div>
         </div>
+
+        <div class="w3-col l3 m6 w3-margin-bottom" >
+          <div class="w3-card">
+            <div class="w3-container ">
+              <h3>KLT</h3>
+              <p class="w3-opacity"></p>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">K50 Route</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">K51 Route</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">K52 Route</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">KLT Picking</button></p>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-col l3 m6 w3-margin-bottom" >
+          <div class="w3-card">
+            <div class="w3-container ">
+              <h3>Heading</h3>
+              <p class="w3-opacity"></p>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">Title</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">Title</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">Title</button></p>
+              </a>
+
+              <a href="file:///\\na.vwg\chattanooga\File\CL-IL3_TVS_Body_Shop\2021 CLI WI's\...">
+                <p><button class="w3-button w3-light-grey w3-block ">Title</button></p>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="w3-col l3 m6 w3-margin-bottom" >
-      <div class="w3-card">
-        <img src="images.jpg" alt="images.jpg " style="width:100% ">
-        <div class="w3-container ">
-          <h3>Heading</h3>
-          <p class="w3-opacity ">Sub heading</p>
-          <p>Body Text</p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-        </div>
+    <!-- Modal for full size images on click-->
+    <div id="modal01 " class="w3-modal w3-black " onclick="this.style.display='none' ">
+      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright " title="Close Modal Image ">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64 ">
+        <img id="img01 " class="w3-image ">
+        <p id="caption " class="w3-opacity w3-large "></p>
       </div>
     </div>
 
-    <div class="w3-col l3 m6 w3-margin-bottom" >
-      <div class="w3-card">
-        <img src="images.jpg" alt="images.jpg " style="width:100% ">
-        <div class="w3-container ">
-          <h3>Heading</h3>
-          <p class="w3-opacity ">Sub heading</p>
-          <p>Body Text</p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom" >
-      <div class="w3-card">
-        <img src="images.jpg" alt="images.jpg " style="width:100% ">
-        <div class="w3-container ">
-          <h3>Heading</h3>
-          <p class="w3-opacity ">Sub heading</p>
-          <p>Body Text</p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-          <p><button class="w3-button w3-light-grey w3-block "> Title</button></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01 " class="w3-modal w3-black " onclick="this.style.display='none' ">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright " title="Close Modal Image ">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64 ">
-    <img id="img01 " class="w3-image ">
-    <p id="caption " class="w3-opacity w3-large "></p>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 ">
-  <a href="#home " class="w3-button w3-light-grey "><i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp " title="W3.CSS " target="_blank " class="w3-hover-text-green ">w3.css</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01 ").src = element.src;
-  document.getElementById("modal01 ").style.display = "block ";
-  var captionText = document.getElementById("caption ");
-  captionText.innerHTML = element.alt;
-}
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 ">
+      <a href="#home " class="w3-button w3-light-grey "><i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp " title="W3.CSS " target="_blank " class="w3-hover-text-green ">w3.css</a></p>
+    </footer>
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar ");
+    <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01 ").src = element.src;
+      document.getElementById("modal01 ").style.display = "block ";
+      var captionText = document.getElementById("caption ");
+      captionText.innerHTML = element.alt;
+    }
 
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar ");
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none ";
-}
-</script>
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
 
-</body>
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none ";
+    }
+    </script>
+
+  </body>
 </html>
